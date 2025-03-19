@@ -1,13 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fluify - Gestão Inteligente de Pilates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
-    <div>
-        teste
-    </div>
+    <header>
+        <nav>
+            <h1>Fluify</h1>
+            <ul>
+                <li><a href="#login" class="login-btn">Área do Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Gerencie seu estúdio de Pilates com IA</h2>
+                <p>Automatize processos, aumente resultados e transforme seu estúdio com inteligência artificial</p>
+                <div class="cta-buttons">
+                    <a href="#planos" class="cta-button">Ver Planos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos">
+            <h2>Escolha seu plano</h2>
+            <div class="planos-container">
+                <div class="plano">
+                    <h3>Starter</h3>
+                    <div class="preco">R$197<span>/mês</span></div>
+                    <ul>
+                        <li><i data-feather="check"></i>Até 50 alunos</li>
+                        <li><i data-feather="check"></i>Agenda online</li>
+                        <li><i data-feather="check"></i>App mobile</li>
+                    </ul>
+                    <a href="https://pay.hotmart.com/SEUPLANO1" class="plano-btn" onclick="redirectToWhatsApp('starter')">Começar agora</a>
+                </div>
+                <div class="plano destaque">
+                    <h3>Pro</h3>
+                    <div class="preco">R$297<span>/mês</span></div>
+                    <ul>
+                        <li><i data-feather="check"></i>Alunos ilimitados</li>
+                        <li><i data-feather="check"></i>Recursos de IA</li>
+                        <li><i data-feather="check"></i>Suporte prioritário</li>
+                    </ul>
+                    <a href="https://pay.hotmart.com/SEUPLANO2" class="plano-btn" onclick="redirectToWhatsApp('pro')">Começar agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Vamos começar?</h2>
+            <p>Escolha a melhor forma de contato</p>
+            <div class="contato-buttons">
+                <a href="https://wa.me/5514998336427?text=Ol%C3%A1!%20Vi%20o%20sistema%20Fluify%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20ele%20pode%20ajudar%20meu%20est%C3%BAdio%20de%20Pilates." target="_blank" class="whatsapp-button">
+                    <i data-feather="message-circle"></i> Falar com Consultor no WhatsApp
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>© 2025 Fluify</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
